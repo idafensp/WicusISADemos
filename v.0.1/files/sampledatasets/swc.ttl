@@ -1,0 +1,2736 @@
+@prefix : <file:/Users/isantana/Dropbox/DOCTORADO/ONTOLOGIAS/WICUS/testcases/WfcomponentsWind/SWCatalog/SWC%20Annotations/SWC_OK_merge_20131220.ttl#> .
+@prefix SoftwareComponent: <http://purl.org/net/wicus-stack/resource/SoftwareComponent/> .
+@prefix p-plan: <http://purl.org/net/p-plan#> .
+@prefix ConfigurationParameter: <http://purl.org/net/wicus-stack/resource/ConfigurationParameter/> .
+@prefix ConfigurationInfo: <http://purl.org/net/wicus-stack/resource/ConfigurationInfo/> .
+@prefix wicus-stack: <http://purl.org/net/wicus-stack#> .
+@prefix DeploymentStep: <http://purl.org/net/wicus-stack/resource/DeploymentStep/> .
+@prefix DeploymentPlan: <http://purl.org/net/wicus-stack/resource/DeploymentPlan/> .
+@prefix SoftwareBinary: <http://purl.org/net/wicus-stack/resource/SoftwareBinary/> .
+@prefix SoftwareStack: <http://purl.org/net/wicus-stack/resource/SoftwareStack/> .
+@prefix DeploymentsScript: <http://purl.org/net/wicus-stack/resource/DeploymentsScript/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix Version: <http://purl.org/net/wicus-stack/resource/Version/> .
+@base <file:/Users/isantana/Dropbox/DOCTORADO/ONTOLOGIAS/WICUS/testcases/WfcomponentsWind/SWCatalog/SWC%20Annotations/SWC_OK_merge_20131220.ttl> .
+
+<file:/Users/isantana/Dropbox/DOCTORADO/ONTOLOGIAS/WICUS/testcases/WfcomponentsWind/SWCatalog/SWC%20Annotations/SWC_OK_merge_20131220.ttl> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://purl.org/net/p-plan#isInputVarOf
+
+p-plan:isInputVarOf rdf:type owl:ObjectProperty .
+
+
+
+###  http://purl.org/net/p-plan#isStepOfPlan
+
+p-plan:isStepOfPlan rdf:type owl:ObjectProperty .
+
+
+
+###  http://purl.org/net/wicus-stack#hasBinary
+
+wicus-stack:hasBinary rdf:type owl:ObjectProperty .
+
+
+
+###  http://purl.org/net/wicus-stack#hasConfigurationInfo
+
+wicus-stack:hasConfigurationInfo rdf:type owl:ObjectProperty .
+
+
+
+###  http://purl.org/net/wicus-stack#hasDeploymentScript
+
+wicus-stack:hasDeploymentScript rdf:type owl:ObjectProperty .
+
+
+
+###  http://purl.org/net/wicus-stack#hasVersion
+
+wicus-stack:hasVersion rdf:type owl:ObjectProperty .
+
+
+
+###  http://purl.org/net/wicus-stack#isConfigurationParameterOf
+
+wicus-stack:isConfigurationParameterOf rdf:type owl:ObjectProperty .
+
+
+
+###  http://purl.org/net/wicus-stack#isDeploymentPlanOf
+
+wicus-stack:isDeploymentPlanOf rdf:type owl:ObjectProperty .
+
+
+
+###  http://purl.org/net/wicus-stack#isDeploymentStepOf
+
+wicus-stack:isDeploymentStepOf rdf:type owl:ObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://purl.org/net/wicus-stack#binary
+
+wicus-stack:binary rdf:type owl:DatatypeProperty .
+
+
+
+###  http://purl.org/net/wicus-stack#parameterName
+
+wicus-stack:parameterName rdf:type owl:DatatypeProperty .
+
+
+
+###  http://purl.org/net/wicus-stack#parameterValue
+
+wicus-stack:parameterValue rdf:type owl:DatatypeProperty .
+
+
+
+###  http://purl.org/net/wicus-stack#script
+
+wicus-stack:script rdf:type owl:DatatypeProperty .
+
+
+
+###  http://purl.org/net/wicus-stack#versionNumber
+
+wicus-stack:versionNumber rdf:type owl:DatatypeProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://purl.org/net/p-plan#Plan
+
+p-plan:Plan rdf:type owl:Class .
+
+
+
+###  http://purl.org/net/p-plan#Step
+
+p-plan:Step rdf:type owl:Class .
+
+
+
+###  http://purl.org/net/p-plan#Variable
+
+p-plan:Variable rdf:type owl:Class .
+
+
+
+###  http://purl.org/net/wicus-stack#ConfigurationInfo
+
+wicus-stack:ConfigurationInfo rdf:type owl:Class .
+
+
+
+###  http://purl.org/net/wicus-stack#ConfigurationParameter
+
+wicus-stack:ConfigurationParameter rdf:type owl:Class .
+
+
+
+###  http://purl.org/net/wicus-stack#DeploymentPlan
+
+wicus-stack:DeploymentPlan rdf:type owl:Class .
+
+
+
+###  http://purl.org/net/wicus-stack#DeploymentScript
+
+wicus-stack:DeploymentScript rdf:type owl:Class .
+
+
+
+###  http://purl.org/net/wicus-stack#DeploymentStep
+
+wicus-stack:DeploymentStep rdf:type owl:Class .
+
+
+
+###  http://purl.org/net/wicus-stack#SoftwareBinary
+
+wicus-stack:SoftwareBinary rdf:type owl:Class .
+
+
+
+###  http://purl.org/net/wicus-stack#SoftwareComponent
+
+wicus-stack:SoftwareComponent rdf:type owl:Class .
+
+
+
+###  http://purl.org/net/wicus-stack#Version
+
+wicus-stack:Version rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+
+owl:Thing rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/CF_CONF_INFO
+
+ConfigurationInfo:CF_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                        owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/CHISQUARED_CONF_INFO
+
+ConfigurationInfo:CHISQUARED_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                                owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/CLUTO_CONF_INFO
+
+ConfigurationInfo:CLUTO_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                           owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/DF_CONF_INFO
+
+ConfigurationInfo:DF_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                        owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/FEATURESELECTION_CONF_INFO
+
+ConfigurationInfo:FEATURESELECTION_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                                      owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/FORMATARFF_CONF_INFO
+
+ConfigurationInfo:FORMATARFF_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                                owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/FORMATCLUTO_CONF_INFO
+
+ConfigurationInfo:FORMATCLUTO_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                                 owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/GRAPHCLUSTERING_CONF_INFO
+
+ConfigurationInfo:GRAPHCLUSTERING_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                                     owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/IDF_CONF_INFO
+
+ConfigurationInfo:IDF_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                         owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/INFORMATIONGAIN_CONF_INFO
+
+ConfigurationInfo:INFORMATIONGAIN_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                                     owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/JAVA_CONF_INFO
+
+ConfigurationInfo:JAVA_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                          owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/LIBLINEAR_1_8_CONF_INFO
+
+ConfigurationInfo:LIBLINEAR_1_8_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                                   owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/LIBLINEAR_CONF_INFO
+
+ConfigurationInfo:LIBLINEAR_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                               owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/LIBSVM_CONF_INFO
+
+ConfigurationInfo:LIBSVM_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                            owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/LIBSVM_LIB_CONF_INFO
+
+ConfigurationInfo:LIBSVM_LIB_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                                owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/LOVINSSTEMMER_CONF_INFO
+
+ConfigurationInfo:LOVINSSTEMMER_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                                   owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/MATLAB_CONF_INFO
+
+ConfigurationInfo:MATLAB_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                            owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/MULTI2SINGLE_CONF_INFO
+
+ConfigurationInfo:MULTI2SINGLE_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                                  owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/MUTUALINFORMATION_CONF_INFO
+
+ConfigurationInfo:MUTUALINFORMATION_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                                       owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/PORTERSTEMMER_CONF_INFO
+
+ConfigurationInfo:PORTERSTEMMER_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                                   owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/REMOVESTOPWORDS_CONF_INFO
+
+ConfigurationInfo:REMOVESTOPWORDS_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                                     owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/SMALLWORDS_CONF_INFO
+
+ConfigurationInfo:SMALLWORDS_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                                owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/STOPWORDS_CONF_INFO
+
+ConfigurationInfo:STOPWORDS_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                               owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/TFIDF_CONF_INFO
+
+ConfigurationInfo:TFIDF_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                           owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/TF_CONF_INFO
+
+ConfigurationInfo:TF_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                        owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationInfo/WEKA_CONF_INFO
+
+ConfigurationInfo:WEKA_CONF_INFO rdf:type wicus-stack:ConfigurationInfo ,
+                                          owl:Thing .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/CF_CONF_PAR
+
+ConfigurationParameter:CF_CONF_PAR rdf:type p-plan:Variable ,
+                                            wicus-stack:ConfigurationParameter ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:parameterName "DEST_PATH"^^xsd:string ;
+                                   
+                                   wicus-stack:parameterValue "DIR:"^^xsd:string ;
+                                   
+                                   wicus-stack:isConfigurationParameterOf ConfigurationInfo:CF_CONF_INFO ;
+                                   
+                                   p-plan:isInputVarOf ConfigurationInfo:CF_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/CHISQUARED_CONF_PAR
+
+ConfigurationParameter:CHISQUARED_CONF_PAR rdf:type p-plan:Variable ,
+                                                    wicus-stack:ConfigurationParameter ,
+                                                    owl:Thing ;
+                                           
+                                           wicus-stack:parameterName "DEST_PATH"^^xsd:string ;
+                                           
+                                           wicus-stack:parameterValue "DIR:"^^xsd:string ;
+                                           
+                                           p-plan:isInputVarOf ConfigurationInfo:CHISQUARED_CONF_INFO ;
+                                           
+                                           wicus-stack:isConfigurationParameterOf ConfigurationInfo:CHISQUARED_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/CLUTO_CONF_PAR
+
+ConfigurationParameter:CLUTO_CONF_PAR rdf:type p-plan:Variable ,
+                                               wicus-stack:ConfigurationParameter ,
+                                               owl:Thing ;
+                                      
+                                      wicus-stack:parameterName "CLUTO_HOME"^^xsd:string ;
+                                      
+                                      wicus-stack:parameterValue "DIR:../lib/"^^xsd:string ;
+                                      
+                                      p-plan:isInputVarOf ConfigurationInfo:CLUTO_CONF_INFO ;
+                                      
+                                      wicus-stack:isConfigurationParameterOf ConfigurationInfo:CLUTO_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/DF_CONF_PAR
+
+ConfigurationParameter:DF_CONF_PAR rdf:type p-plan:Variable ,
+                                            wicus-stack:ConfigurationParameter ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:parameterName "DEST_PATH"^^xsd:string ;
+                                   
+                                   wicus-stack:parameterValue "DIR:"^^xsd:string ;
+                                   
+                                   p-plan:isInputVarOf ConfigurationInfo:DF_CONF_INFO ;
+                                   
+                                   wicus-stack:isConfigurationParameterOf ConfigurationInfo:DF_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/FORMATARFF_CONF_PAR
+
+ConfigurationParameter:FORMATARFF_CONF_PAR rdf:type p-plan:Variable ,
+                                                    wicus-stack:ConfigurationParameter ,
+                                                    owl:Thing ;
+                                           
+                                           wicus-stack:parameterName "DEST_PATH"^^xsd:string ;
+                                           
+                                           wicus-stack:parameterValue "DIR:"^^xsd:string ;
+                                           
+                                           wicus-stack:isConfigurationParameterOf ConfigurationInfo:FORMATARFF_CONF_INFO ;
+                                           
+                                           p-plan:isInputVarOf ConfigurationInfo:FORMATARFF_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/FORMATCLUTO_CONF_PAR
+
+ConfigurationParameter:FORMATCLUTO_CONF_PAR rdf:type p-plan:Variable ,
+                                                     wicus-stack:ConfigurationParameter ,
+                                                     owl:Thing ;
+                                            
+                                            wicus-stack:parameterName "DEST_PATH"^^xsd:string ;
+                                            
+                                            wicus-stack:parameterValue "DIR:"^^xsd:string ;
+                                            
+                                            wicus-stack:isConfigurationParameterOf ConfigurationInfo:FORMATCLUTO_CONF_INFO ;
+                                            
+                                            p-plan:isInputVarOf ConfigurationInfo:FORMATCLUTO_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/IDF_CONF_PAR
+
+ConfigurationParameter:IDF_CONF_PAR rdf:type p-plan:Variable ,
+                                             wicus-stack:ConfigurationParameter ,
+                                             owl:Thing ;
+                                    
+                                    wicus-stack:parameterName "DEST_PATH"^^xsd:string ;
+                                    
+                                    wicus-stack:parameterValue "DIR:"^^xsd:string ;
+                                    
+                                    p-plan:isInputVarOf ConfigurationInfo:IDF_CONF_INFO ;
+                                    
+                                    wicus-stack:isConfigurationParameterOf ConfigurationInfo:IDF_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/JAVA_CONF_PAR
+
+ConfigurationParameter:JAVA_CONF_PAR rdf:type p-plan:Variable ,
+                                              wicus-stack:ConfigurationParameter ,
+                                              owl:Thing ;
+                                     
+                                     wicus-stack:parameterValue "/usr/lib/jvm/"^^xsd:string ;
+                                     
+                                     wicus-stack:parameterName "JAVA_HOME"^^xsd:string ;
+                                     
+                                     wicus-stack:isConfigurationParameterOf ConfigurationInfo:JAVA_CONF_INFO ;
+                                     
+                                     p-plan:isInputVarOf ConfigurationInfo:JAVA_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/LIBLINEAR_1_8_CONF_PAR
+
+ConfigurationParameter:LIBLINEAR_1_8_CONF_PAR rdf:type p-plan:Variable ,
+                                                       wicus-stack:ConfigurationParameter ,
+                                                       owl:Thing ;
+                                              
+                                              wicus-stack:parameterName "DEST_PATH"^^xsd:string ;
+                                              
+                                              wicus-stack:parameterValue "DIR:../lib/wekafiles/packages/LibLINEAR/lib/"^^xsd:string ;
+                                              
+                                              wicus-stack:isConfigurationParameterOf ConfigurationInfo:LIBLINEAR_1_8_CONF_INFO ;
+                                              
+                                              p-plan:isInputVarOf ConfigurationInfo:LIBLINEAR_1_8_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/LIBLINEAR_CONF_PAR
+
+ConfigurationParameter:LIBLINEAR_CONF_PAR rdf:type p-plan:Variable ,
+                                                   wicus-stack:ConfigurationParameter ,
+                                                   owl:Thing ;
+                                          
+                                          wicus-stack:parameterName "DEST_PATH"^^xsd:string ;
+                                          
+                                          wicus-stack:parameterValue "DIR:../lib/wekafiles/packages/LibLINEAR/"^^xsd:string ;
+                                          
+                                          wicus-stack:isConfigurationParameterOf ConfigurationInfo:LIBLINEAR_CONF_INFO ;
+                                          
+                                          p-plan:isInputVarOf ConfigurationInfo:LIBLINEAR_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/LIBSVM_CONF_PAR
+
+ConfigurationParameter:LIBSVM_CONF_PAR rdf:type p-plan:Variable ,
+                                                wicus-stack:ConfigurationParameter ,
+                                                owl:Thing ;
+                                       
+                                       wicus-stack:parameterName "DEST_PATH"^^xsd:string ;
+                                       
+                                       wicus-stack:parameterValue "DIR:../lib/wekafiles/packages/LibSVM/"^^xsd:string ;
+                                       
+                                       wicus-stack:isConfigurationParameterOf ConfigurationInfo:LIBSVM_CONF_INFO ;
+                                       
+                                       p-plan:isInputVarOf ConfigurationInfo:LIBSVM_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/LIBSVM_LIB_CONF_PAR
+
+ConfigurationParameter:LIBSVM_LIB_CONF_PAR rdf:type p-plan:Variable ,
+                                                    wicus-stack:ConfigurationParameter ,
+                                                    owl:Thing ;
+                                           
+                                           wicus-stack:parameterName "DEST_PATH"^^xsd:string ;
+                                           
+                                           wicus-stack:parameterValue "DIR:../lib/wekafiles/packages/LibSVM/lib/"^^xsd:string ;
+                                           
+                                           p-plan:isInputVarOf ConfigurationInfo:LIBSVM_LIB_CONF_INFO ;
+                                           
+                                           wicus-stack:isConfigurationParameterOf ConfigurationInfo:LIBSVM_LIB_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/LOVINSSTEMMER_CONF_PAR
+
+ConfigurationParameter:LOVINSSTEMMER_CONF_PAR rdf:type p-plan:Variable ,
+                                                       wicus-stack:ConfigurationParameter ,
+                                                       owl:Thing ;
+                                              
+                                              wicus-stack:parameterName "DEST_PATH"^^xsd:string ;
+                                              
+                                              wicus-stack:parameterValue "DIR:"^^xsd:string ;
+                                              
+                                              wicus-stack:isConfigurationParameterOf ConfigurationInfo:LOVINSSTEMMER_CONF_INFO ;
+                                              
+                                              p-plan:isInputVarOf ConfigurationInfo:LOVINSSTEMMER_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/MATLAB_CONF_PAR
+
+ConfigurationParameter:MATLAB_CONF_PAR rdf:type p-plan:Variable ,
+                                                wicus-stack:ConfigurationParameter ,
+                                                owl:Thing ;
+                                       
+                                       wicus-stack:parameterValue "/usr/local/bin/matlab/"^^xsd:string ;
+                                       
+                                       wicus-stack:parameterName "MATLAB_HOME"^^xsd:string ;
+                                       
+                                       p-plan:isInputVarOf ConfigurationInfo:MATLAB_CONF_INFO ;
+                                       
+                                       wicus-stack:isConfigurationParameterOf ConfigurationInfo:MATLAB_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/MULTI2SINGLE_CONF_PAR
+
+ConfigurationParameter:MULTI2SINGLE_CONF_PAR rdf:type p-plan:Variable ,
+                                                      wicus-stack:ConfigurationParameter ,
+                                                      owl:Thing ;
+                                             
+                                             wicus-stack:parameterName "DEST_PATH"^^xsd:string ;
+                                             
+                                             wicus-stack:parameterValue "DIR:"^^xsd:string ;
+                                             
+                                             p-plan:isInputVarOf ConfigurationInfo:MULTI2SINGLE_CONF_INFO ;
+                                             
+                                             wicus-stack:isConfigurationParameterOf ConfigurationInfo:MULTI2SINGLE_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/PORTERSTEMMER_CONF_PAR
+
+ConfigurationParameter:PORTERSTEMMER_CONF_PAR rdf:type p-plan:Variable ,
+                                                       wicus-stack:ConfigurationParameter ,
+                                                       owl:Thing ;
+                                              
+                                              wicus-stack:parameterName "DEST_PATH"^^xsd:string ;
+                                              
+                                              wicus-stack:parameterValue "DIR:"^^xsd:string ;
+                                              
+                                              wicus-stack:isConfigurationParameterOf ConfigurationInfo:PORTERSTEMMER_CONF_INFO ;
+                                              
+                                              p-plan:isInputVarOf ConfigurationInfo:PORTERSTEMMER_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/REMOVESTOPWORDS_CONF_PAR
+
+ConfigurationParameter:REMOVESTOPWORDS_CONF_PAR rdf:type p-plan:Variable ,
+                                                         wicus-stack:ConfigurationParameter ,
+                                                         owl:Thing ;
+                                                
+                                                wicus-stack:parameterName "DEST_PATH"^^xsd:string ;
+                                                
+                                                wicus-stack:parameterValue "DIR:"^^xsd:string ;
+                                                
+                                                wicus-stack:isConfigurationParameterOf ConfigurationInfo:REMOVESTOPWORDS_CONF_INFO ;
+                                                
+                                                p-plan:isInputVarOf ConfigurationInfo:REMOVESTOPWORDS_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/SMALLWORDS_CONF_PAR
+
+ConfigurationParameter:SMALLWORDS_CONF_PAR rdf:type p-plan:Variable ,
+                                                    wicus-stack:ConfigurationParameter ,
+                                                    owl:Thing ;
+                                           
+                                           wicus-stack:parameterName "DEST_PATH"^^xsd:string ;
+                                           
+                                           wicus-stack:parameterValue "DIR:"^^xsd:string ;
+                                           
+                                           wicus-stack:isConfigurationParameterOf ConfigurationInfo:SMALLWORDS_CONF_INFO ;
+                                           
+                                           p-plan:isInputVarOf ConfigurationInfo:SMALLWORDS_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/STOPWORDS_CONF_PAR
+
+ConfigurationParameter:STOPWORDS_CONF_PAR rdf:type p-plan:Variable ,
+                                                   wicus-stack:ConfigurationParameter ,
+                                                   owl:Thing ;
+                                          
+                                          wicus-stack:parameterName "DEST_PATH"^^xsd:string ;
+                                          
+                                          wicus-stack:parameterValue "DIR:"^^xsd:string ;
+                                          
+                                          p-plan:isInputVarOf ConfigurationInfo:STOPWORDS_CONF_INFO ;
+                                          
+                                          wicus-stack:isConfigurationParameterOf ConfigurationInfo:STOPWORDS_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/TFIDF_CONF_PAR
+
+ConfigurationParameter:TFIDF_CONF_PAR rdf:type p-plan:Variable ,
+                                               wicus-stack:ConfigurationParameter ,
+                                               owl:Thing ;
+                                      
+                                      wicus-stack:parameterName "DEST_PATH"^^xsd:string ;
+                                      
+                                      wicus-stack:parameterValue "DIR:"^^xsd:string ;
+                                      
+                                      p-plan:isInputVarOf ConfigurationInfo:TFIDF_CONF_INFO ;
+                                      
+                                      wicus-stack:isConfigurationParameterOf ConfigurationInfo:TFIDF_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/TF_CONF_PAR
+
+ConfigurationParameter:TF_CONF_PAR rdf:type p-plan:Variable ,
+                                            wicus-stack:ConfigurationParameter ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:parameterName "DEST_PATH"^^xsd:string ;
+                                   
+                                   wicus-stack:parameterValue "DIR:"^^xsd:string ;
+                                   
+                                   wicus-stack:isConfigurationParameterOf ConfigurationInfo:TF_CONF_INFO ;
+                                   
+                                   p-plan:isInputVarOf ConfigurationInfo:TF_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/WEKA_CONF_PAR
+
+ConfigurationParameter:WEKA_CONF_PAR rdf:type p-plan:Variable ,
+                                              wicus-stack:ConfigurationParameter ,
+                                              owl:Thing ;
+                                     
+                                     wicus-stack:parameterValue "DIR:../lib/"^^xsd:string ;
+                                     
+                                     wicus-stack:parameterName "WEKA_HOME"^^xsd:string ;
+                                     
+                                     wicus-stack:isConfigurationParameterOf ConfigurationInfo:WEKA_CONF_INFO ;
+                                     
+                                     p-plan:isInputVarOf ConfigurationInfo:WEKA_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/CF_DEP_PLAN
+
+DeploymentPlan:CF_DEP_PLAN rdf:type p-plan:Plan ,
+                                    wicus-stack:DeploymentPlan ,
+                                    owl:Thing ;
+                           
+                           wicus-stack:hasConfigurationInfo ConfigurationInfo:CF_CONF_INFO ;
+                           
+                           wicus-stack:isDeploymentPlanOf SoftwareComponent:CF_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/CHISQUARED_DEP_PLAN
+
+DeploymentPlan:CHISQUARED_DEP_PLAN rdf:type p-plan:Plan ,
+                                            wicus-stack:DeploymentPlan ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:hasConfigurationInfo ConfigurationInfo:CHISQUARED_CONF_INFO ;
+                                   
+                                   wicus-stack:isDeploymentPlanOf SoftwareComponent:CHISQUARED_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/CLUTO_DEP_PLAN
+
+DeploymentPlan:CLUTO_DEP_PLAN rdf:type p-plan:Plan ,
+                                       wicus-stack:DeploymentPlan ,
+                                       owl:Thing ;
+                              
+                              wicus-stack:hasConfigurationInfo ConfigurationInfo:CLUTO_CONF_INFO ;
+                              
+                              wicus-stack:isDeploymentPlanOf SoftwareComponent:CLUTO_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/DF_DEP_PLAN
+
+DeploymentPlan:DF_DEP_PLAN rdf:type p-plan:Plan ,
+                                    wicus-stack:DeploymentPlan ,
+                                    owl:Thing ;
+                           
+                           wicus-stack:hasConfigurationInfo ConfigurationInfo:DF_CONF_INFO ;
+                           
+                           wicus-stack:isDeploymentPlanOf SoftwareComponent:DF_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/FEATURESELECTION_DEP_PLAN
+
+DeploymentPlan:FEATURESELECTION_DEP_PLAN rdf:type p-plan:Plan ,
+                                                  wicus-stack:DeploymentPlan ,
+                                                  owl:Thing ;
+                                         
+                                         wicus-stack:hasConfigurationInfo ConfigurationInfo:FEATURESELECTION_CONF_INFO ;
+                                         
+                                         wicus-stack:isDeploymentPlanOf SoftwareComponent:FEATURESELECTION_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/FORMATARFF_DEP_PLAN
+
+DeploymentPlan:FORMATARFF_DEP_PLAN rdf:type p-plan:Plan ,
+                                            wicus-stack:DeploymentPlan ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:hasConfigurationInfo ConfigurationInfo:FORMATARFF_CONF_INFO ;
+                                   
+                                   wicus-stack:isDeploymentPlanOf SoftwareComponent:FORMATARFF_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/FORMATCLUTO_DEP_PLAN
+
+DeploymentPlan:FORMATCLUTO_DEP_PLAN rdf:type p-plan:Plan ,
+                                             wicus-stack:DeploymentPlan ,
+                                             owl:Thing ;
+                                    
+                                    wicus-stack:hasConfigurationInfo ConfigurationInfo:FORMATCLUTO_CONF_INFO ;
+                                    
+                                    wicus-stack:isDeploymentPlanOf SoftwareComponent:FORMATCLUTO_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/IDF_DEP_PLAN
+
+DeploymentPlan:IDF_DEP_PLAN rdf:type p-plan:Plan ,
+                                     wicus-stack:DeploymentPlan ,
+                                     owl:Thing ;
+                            
+                            wicus-stack:hasConfigurationInfo ConfigurationInfo:IDF_CONF_INFO ;
+                            
+                            wicus-stack:isDeploymentPlanOf SoftwareComponent:IDF_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/INFORMATIONGAIN_DEP_PLAN
+
+DeploymentPlan:INFORMATIONGAIN_DEP_PLAN rdf:type p-plan:Plan ,
+                                                 wicus-stack:DeploymentPlan ,
+                                                 owl:Thing ;
+                                        
+                                        wicus-stack:hasConfigurationInfo ConfigurationInfo:INFORMATIONGAIN_CONF_INFO ;
+                                        
+                                        wicus-stack:isDeploymentPlanOf SoftwareComponent:INFORMATIONGAIN_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/JAVA_DEP_PLAN
+
+DeploymentPlan:JAVA_DEP_PLAN rdf:type p-plan:Plan ,
+                                      wicus-stack:DeploymentPlan ,
+                                      owl:Thing ;
+                             
+                             wicus-stack:hasConfigurationInfo ConfigurationInfo:JAVA_CONF_INFO ;
+                             
+                             wicus-stack:isDeploymentPlanOf SoftwareComponent:JAVA_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/LIBLINEAR_1_8_DEP_PLAN
+
+DeploymentPlan:LIBLINEAR_1_8_DEP_PLAN rdf:type p-plan:Plan ,
+                                               wicus-stack:DeploymentPlan ,
+                                               owl:Thing ;
+                                      
+                                      wicus-stack:hasConfigurationInfo ConfigurationInfo:LIBLINEAR_1_8_CONF_INFO ;
+                                      
+                                      wicus-stack:isDeploymentPlanOf SoftwareComponent:LIBLINEAR_1_8_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/LIBLINEAR_DEP_PLAN
+
+DeploymentPlan:LIBLINEAR_DEP_PLAN rdf:type p-plan:Plan ,
+                                           wicus-stack:DeploymentPlan ,
+                                           owl:Thing ;
+                                  
+                                  wicus-stack:hasConfigurationInfo ConfigurationInfo:LIBLINEAR_CONF_INFO ;
+                                  
+                                  wicus-stack:isDeploymentPlanOf SoftwareComponent:LIBLINEAR_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/LIBSVM_DEP_PLAN
+
+DeploymentPlan:LIBSVM_DEP_PLAN rdf:type p-plan:Plan ,
+                                        wicus-stack:DeploymentPlan ,
+                                        owl:Thing ;
+                               
+                               wicus-stack:hasConfigurationInfo ConfigurationInfo:LIBSVM_CONF_INFO ;
+                               
+                               wicus-stack:isDeploymentPlanOf SoftwareComponent:LIBSVM_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/LIBSVM_LIB_DEP_PLAN
+
+DeploymentPlan:LIBSVM_LIB_DEP_PLAN rdf:type p-plan:Plan ,
+                                            wicus-stack:DeploymentPlan ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:hasConfigurationInfo ConfigurationInfo:LIBSVM_LIB_CONF_INFO ;
+                                   
+                                   wicus-stack:isDeploymentPlanOf SoftwareComponent:LIBSVM_LIB_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/LOVINSSTEMMER_DEP_PLAN
+
+DeploymentPlan:LOVINSSTEMMER_DEP_PLAN rdf:type p-plan:Plan ,
+                                               wicus-stack:DeploymentPlan ,
+                                               owl:Thing ;
+                                      
+                                      wicus-stack:hasConfigurationInfo ConfigurationInfo:LOVINSSTEMMER_CONF_INFO ;
+                                      
+                                      wicus-stack:isDeploymentPlanOf SoftwareComponent:LOVINSSTEMMER_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/MATLAB_DEP_PLAN
+
+DeploymentPlan:MATLAB_DEP_PLAN rdf:type p-plan:Plan ,
+                                        wicus-stack:DeploymentPlan ,
+                                        owl:Thing ;
+                               
+                               wicus-stack:hasConfigurationInfo ConfigurationInfo:MATLAB_CONF_INFO ;
+                               
+                               wicus-stack:isDeploymentPlanOf SoftwareComponent:MATLAB_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/MULTI2SINGLE_DEP_PLAN
+
+DeploymentPlan:MULTI2SINGLE_DEP_PLAN rdf:type p-plan:Plan ,
+                                              wicus-stack:DeploymentPlan ,
+                                              owl:Thing ;
+                                     
+                                     wicus-stack:hasConfigurationInfo ConfigurationInfo:MULTI2SINGLE_CONF_INFO ;
+                                     
+                                     wicus-stack:isDeploymentPlanOf SoftwareComponent:MULTI2SINGLE_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/MUTUALINFORMATION_DEP_PLAN
+
+DeploymentPlan:MUTUALINFORMATION_DEP_PLAN rdf:type p-plan:Plan ,
+                                                   wicus-stack:DeploymentPlan ,
+                                                   owl:Thing ;
+                                          
+                                          wicus-stack:hasConfigurationInfo ConfigurationInfo:MUTUALINFORMATION_CONF_INFO ;
+                                          
+                                          wicus-stack:isDeploymentPlanOf SoftwareComponent:MUTUALINFORMATION_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/PORTERSTEMMER_DEP_PLAN
+
+DeploymentPlan:PORTERSTEMMER_DEP_PLAN rdf:type p-plan:Plan ,
+                                               wicus-stack:DeploymentPlan ,
+                                               owl:Thing ;
+                                      
+                                      wicus-stack:hasConfigurationInfo ConfigurationInfo:PORTERSTEMMER_CONF_INFO ;
+                                      
+                                      wicus-stack:isDeploymentPlanOf SoftwareComponent:PORTERSTEMMER_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/REMOVESTOPWORDS_DEP_PLAN
+
+DeploymentPlan:REMOVESTOPWORDS_DEP_PLAN rdf:type p-plan:Plan ,
+                                                 wicus-stack:DeploymentPlan ,
+                                                 owl:Thing ;
+                                        
+                                        wicus-stack:hasConfigurationInfo ConfigurationInfo:REMOVESTOPWORDS_CONF_INFO ;
+                                        
+                                        wicus-stack:isDeploymentPlanOf SoftwareComponent:REMOVESTOPWORDS_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/SMALLWORDS_DEP_PLAN
+
+DeploymentPlan:SMALLWORDS_DEP_PLAN rdf:type p-plan:Plan ,
+                                            wicus-stack:DeploymentPlan ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:hasConfigurationInfo ConfigurationInfo:SMALLWORDS_CONF_INFO ;
+                                   
+                                   wicus-stack:isDeploymentPlanOf SoftwareComponent:SMALLWORDS_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/STOPWORDS_DEP_PLAN
+
+DeploymentPlan:STOPWORDS_DEP_PLAN rdf:type p-plan:Plan ,
+                                           wicus-stack:DeploymentPlan ,
+                                           owl:Thing ;
+                                  
+                                  wicus-stack:hasConfigurationInfo ConfigurationInfo:STOPWORDS_CONF_INFO ;
+                                  
+                                  wicus-stack:isDeploymentPlanOf SoftwareComponent:STOPWORDS_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/TFIDF_DEP_PLAN
+
+DeploymentPlan:TFIDF_DEP_PLAN rdf:type p-plan:Plan ,
+                                       wicus-stack:DeploymentPlan ,
+                                       owl:Thing ;
+                              
+                              wicus-stack:hasConfigurationInfo ConfigurationInfo:TFIDF_CONF_INFO ;
+                              
+                              wicus-stack:isDeploymentPlanOf SoftwareComponent:TFIDF_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/TF_DEP_PLAN
+
+DeploymentPlan:TF_DEP_PLAN rdf:type p-plan:Plan ,
+                                    wicus-stack:DeploymentPlan ,
+                                    owl:Thing ;
+                           
+                           wicus-stack:hasConfigurationInfo ConfigurationInfo:TF_CONF_INFO ;
+                           
+                           wicus-stack:isDeploymentPlanOf SoftwareComponent:TF_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentPlan/WEKA_DEP_PLAN
+
+DeploymentPlan:WEKA_DEP_PLAN rdf:type p-plan:Plan ,
+                                      wicus-stack:DeploymentPlan ,
+                                      owl:Thing ;
+                             
+                             wicus-stack:hasConfigurationInfo ConfigurationInfo:WEKA_CONF_INFO ;
+                             
+                             wicus-stack:isDeploymentPlanOf SoftwareComponent:WEKA_SOFT_COMP .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/CF_DEP_STEP
+
+DeploymentStep:CF_DEP_STEP rdf:type p-plan:Step ,
+                                    wicus-stack:DeploymentStep ,
+                                    owl:Thing ;
+                           
+                           wicus-stack:isDeploymentStepOf DeploymentPlan:CF_DEP_PLAN ;
+                           
+                           p-plan:isStepOfPlan DeploymentPlan:CF_DEP_PLAN ;
+                           
+                           wicus-stack:hasDeploymentScript DeploymentsScript:CF_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/CHISQUARED_DEP_STEP
+
+DeploymentStep:CHISQUARED_DEP_STEP rdf:type p-plan:Step ,
+                                            wicus-stack:DeploymentStep ,
+                                            owl:Thing ;
+                                   
+                                   p-plan:isStepOfPlan DeploymentPlan:CHISQUARED_DEP_PLAN ;
+                                   
+                                   wicus-stack:isDeploymentStepOf DeploymentPlan:CHISQUARED_DEP_PLAN ;
+                                   
+                                   wicus-stack:hasDeploymentScript DeploymentsScript:CHISQUARED_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/CLUTO_DEP_STEP
+
+DeploymentStep:CLUTO_DEP_STEP rdf:type p-plan:Step ,
+                                       wicus-stack:DeploymentStep ,
+                                       owl:Thing ;
+                              
+                              wicus-stack:isDeploymentStepOf DeploymentPlan:CLUTO_DEP_PLAN ;
+                              
+                              p-plan:isStepOfPlan DeploymentPlan:CLUTO_DEP_PLAN ;
+                              
+                              wicus-stack:hasDeploymentScript DeploymentsScript:CLUTO_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/DF_DEP_STEP
+
+DeploymentStep:DF_DEP_STEP rdf:type p-plan:Step ,
+                                    wicus-stack:DeploymentStep ,
+                                    owl:Thing ;
+                           
+                           wicus-stack:isDeploymentStepOf DeploymentPlan:DF_DEP_PLAN ;
+                           
+                           p-plan:isStepOfPlan DeploymentPlan:DF_DEP_PLAN ;
+                           
+                           wicus-stack:hasDeploymentScript DeploymentsScript:DF_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/FEATURESELECTION_DEP_STEP
+
+DeploymentStep:FEATURESELECTION_DEP_STEP rdf:type p-plan:Step ,
+                                                  wicus-stack:DeploymentStep ,
+                                                  owl:Thing ;
+                                         
+                                         wicus-stack:isDeploymentStepOf DeploymentPlan:FEATURESELECTION_DEP_PLAN ;
+                                         
+                                         p-plan:isStepOfPlan DeploymentPlan:FEATURESELECTION_DEP_PLAN ;
+                                         
+                                         wicus-stack:hasDeploymentScript DeploymentsScript:FEATURESELECTION_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/FORMATARFF_DEP_STEP
+
+DeploymentStep:FORMATARFF_DEP_STEP rdf:type p-plan:Step ,
+                                            wicus-stack:DeploymentStep ,
+                                            owl:Thing ;
+                                   
+                                   p-plan:isStepOfPlan DeploymentPlan:FORMATARFF_DEP_PLAN ;
+                                   
+                                   wicus-stack:isDeploymentStepOf DeploymentPlan:FORMATARFF_DEP_PLAN ;
+                                   
+                                   wicus-stack:hasDeploymentScript DeploymentsScript:FORMATARFF_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/FORMATCLUTO_DEP_STEP
+
+DeploymentStep:FORMATCLUTO_DEP_STEP rdf:type p-plan:Step ,
+                                             wicus-stack:DeploymentStep ,
+                                             owl:Thing ;
+                                    
+                                    p-plan:isStepOfPlan DeploymentPlan:FORMATCLUTO_DEP_PLAN ;
+                                    
+                                    wicus-stack:isDeploymentStepOf DeploymentPlan:FORMATCLUTO_DEP_PLAN ;
+                                    
+                                    wicus-stack:hasDeploymentScript DeploymentsScript:FORMATCLUTO_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/IDF_DEP_STEP
+
+DeploymentStep:IDF_DEP_STEP rdf:type p-plan:Step ,
+                                     wicus-stack:DeploymentStep ,
+                                     owl:Thing ;
+                            
+                            wicus-stack:isDeploymentStepOf DeploymentPlan:IDF_DEP_PLAN ;
+                            
+                            p-plan:isStepOfPlan DeploymentPlan:IDF_DEP_PLAN ;
+                            
+                            wicus-stack:hasDeploymentScript DeploymentsScript:IDF_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/INFORMATIONGAIN_DEP_STEP
+
+DeploymentStep:INFORMATIONGAIN_DEP_STEP rdf:type p-plan:Step ,
+                                                 wicus-stack:DeploymentStep ,
+                                                 owl:Thing ;
+                                        
+                                        wicus-stack:isDeploymentStepOf DeploymentPlan:INFORMATIONGAIN_DEP_PLAN ;
+                                        
+                                        p-plan:isStepOfPlan DeploymentPlan:INFORMATIONGAIN_DEP_PLAN ;
+                                        
+                                        wicus-stack:hasDeploymentScript DeploymentsScript:INFORMATIONGAIN_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/JAVA_DEP_STEP
+
+DeploymentStep:JAVA_DEP_STEP rdf:type p-plan:Step ,
+                                      wicus-stack:DeploymentStep ,
+                                      owl:Thing ;
+                             
+                             p-plan:isStepOfPlan DeploymentPlan:JAVA_DEP_PLAN ;
+                             
+                             wicus-stack:isDeploymentStepOf DeploymentPlan:JAVA_DEP_PLAN ;
+                             
+                             wicus-stack:hasDeploymentScript DeploymentsScript:JAVA_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/LIBLINEAR_1_8_DEP_STEP
+
+DeploymentStep:LIBLINEAR_1_8_DEP_STEP rdf:type p-plan:Step ,
+                                               wicus-stack:DeploymentStep ,
+                                               owl:Thing ;
+                                      
+                                      p-plan:isStepOfPlan DeploymentPlan:LIBLINEAR_1_8_DEP_PLAN ;
+                                      
+                                      wicus-stack:isDeploymentStepOf DeploymentPlan:LIBLINEAR_1_8_DEP_PLAN ;
+                                      
+                                      wicus-stack:hasDeploymentScript DeploymentsScript:LIBLINEAR_1_8_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/LIBLINEAR_DEP_STEP
+
+DeploymentStep:LIBLINEAR_DEP_STEP rdf:type p-plan:Step ,
+                                           wicus-stack:DeploymentStep ,
+                                           owl:Thing ;
+                                  
+                                  p-plan:isStepOfPlan DeploymentPlan:LIBLINEAR_DEP_PLAN ;
+                                  
+                                  wicus-stack:isDeploymentStepOf DeploymentPlan:LIBLINEAR_DEP_PLAN ;
+                                  
+                                  wicus-stack:hasDeploymentScript DeploymentsScript:LIBLINEAR_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/LIBSVM_DEP_STEP
+
+DeploymentStep:LIBSVM_DEP_STEP rdf:type p-plan:Step ,
+                                        wicus-stack:DeploymentStep ,
+                                        owl:Thing ;
+                               
+                               wicus-stack:isDeploymentStepOf DeploymentPlan:LIBSVM_DEP_PLAN ;
+                               
+                               p-plan:isStepOfPlan DeploymentPlan:LIBSVM_DEP_PLAN ;
+                               
+                               wicus-stack:hasDeploymentScript DeploymentsScript:LIBSVM_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/LIBSVM_LIB_DEP_STEP
+
+DeploymentStep:LIBSVM_LIB_DEP_STEP rdf:type p-plan:Step ,
+                                            wicus-stack:DeploymentStep ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:isDeploymentStepOf DeploymentPlan:LIBSVM_LIB_DEP_PLAN ;
+                                   
+                                   p-plan:isStepOfPlan DeploymentPlan:LIBSVM_LIB_DEP_PLAN ;
+                                   
+                                   wicus-stack:hasDeploymentScript DeploymentsScript:LIBSVM_LIB_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/LOVINSSTEMMER_DEP_STEP
+
+DeploymentStep:LOVINSSTEMMER_DEP_STEP rdf:type p-plan:Step ,
+                                               wicus-stack:DeploymentStep ,
+                                               owl:Thing ;
+                                      
+                                      wicus-stack:isDeploymentStepOf DeploymentPlan:LOVINSSTEMMER_DEP_PLAN ;
+                                      
+                                      p-plan:isStepOfPlan DeploymentPlan:LOVINSSTEMMER_DEP_PLAN ;
+                                      
+                                      wicus-stack:hasDeploymentScript DeploymentsScript:LOVINSSTEMMER_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/MATLAB_DEP_STEP
+
+DeploymentStep:MATLAB_DEP_STEP rdf:type p-plan:Step ,
+                                        wicus-stack:DeploymentStep ,
+                                        owl:Thing ;
+                               
+                               wicus-stack:isDeploymentStepOf DeploymentPlan:MATLAB_DEP_PLAN ;
+                               
+                               p-plan:isStepOfPlan DeploymentPlan:MATLAB_DEP_PLAN ;
+                               
+                               wicus-stack:hasDeploymentScript DeploymentsScript:MATLAB_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/MULTI2SINGLE_DEP_STEP
+
+DeploymentStep:MULTI2SINGLE_DEP_STEP rdf:type p-plan:Step ,
+                                              wicus-stack:DeploymentStep ,
+                                              owl:Thing ;
+                                     
+                                     p-plan:isStepOfPlan DeploymentPlan:MULTI2SINGLE_DEP_PLAN ;
+                                     
+                                     wicus-stack:isDeploymentStepOf DeploymentPlan:MULTI2SINGLE_DEP_PLAN ;
+                                     
+                                     wicus-stack:hasDeploymentScript DeploymentsScript:MULTI2SINGLE_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/MUTUALINFORMATION_DEP_STEP
+
+DeploymentStep:MUTUALINFORMATION_DEP_STEP rdf:type p-plan:Step ,
+                                                   wicus-stack:DeploymentStep ,
+                                                   owl:Thing ;
+                                          
+                                          wicus-stack:isDeploymentStepOf DeploymentPlan:MUTUALINFORMATION_DEP_PLAN ;
+                                          
+                                          p-plan:isStepOfPlan DeploymentPlan:MUTUALINFORMATION_DEP_PLAN ;
+                                          
+                                          wicus-stack:hasDeploymentScript DeploymentsScript:MUTUALINFORMATION_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/PORTERSTEMMER_DEP_STEP
+
+DeploymentStep:PORTERSTEMMER_DEP_STEP rdf:type p-plan:Step ,
+                                               wicus-stack:DeploymentStep ,
+                                               owl:Thing ;
+                                      
+                                      p-plan:isStepOfPlan DeploymentPlan:PORTERSTEMMER_DEP_PLAN ;
+                                      
+                                      wicus-stack:isDeploymentStepOf DeploymentPlan:PORTERSTEMMER_DEP_PLAN ;
+                                      
+                                      wicus-stack:hasDeploymentScript DeploymentsScript:PORTERSTEMMER_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/REMOVESTOPWORDS_DEP_STEP
+
+DeploymentStep:REMOVESTOPWORDS_DEP_STEP rdf:type p-plan:Step ,
+                                                 wicus-stack:DeploymentStep ,
+                                                 owl:Thing ;
+                                        
+                                        wicus-stack:isDeploymentStepOf DeploymentPlan:REMOVESTOPWORDS_DEP_PLAN ;
+                                        
+                                        p-plan:isStepOfPlan DeploymentPlan:REMOVESTOPWORDS_DEP_PLAN ;
+                                        
+                                        wicus-stack:hasDeploymentScript DeploymentsScript:REMOVESTOPWORDS_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/SMALLWORDS_DEP_STEP
+
+DeploymentStep:SMALLWORDS_DEP_STEP rdf:type p-plan:Step ,
+                                            wicus-stack:DeploymentStep ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:isDeploymentStepOf DeploymentPlan:SMALLWORDS_DEP_PLAN ;
+                                   
+                                   p-plan:isStepOfPlan DeploymentPlan:SMALLWORDS_DEP_PLAN ;
+                                   
+                                   wicus-stack:hasDeploymentScript DeploymentsScript:SMALLWORDS_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/STOPWORDS_DEP_STEP
+
+DeploymentStep:STOPWORDS_DEP_STEP rdf:type p-plan:Step ,
+                                           wicus-stack:DeploymentStep ,
+                                           owl:Thing ;
+                                  
+                                  p-plan:isStepOfPlan DeploymentPlan:STOPWORDS_DEP_PLAN ;
+                                  
+                                  wicus-stack:isDeploymentStepOf DeploymentPlan:STOPWORDS_DEP_PLAN ;
+                                  
+                                  wicus-stack:hasDeploymentScript DeploymentsScript:STOPWORDS_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/TFIDF_DEP_STEP
+
+DeploymentStep:TFIDF_DEP_STEP rdf:type p-plan:Step ,
+                                       wicus-stack:DeploymentStep ,
+                                       owl:Thing ;
+                              
+                              wicus-stack:isDeploymentStepOf DeploymentPlan:TFIDF_DEP_PLAN ;
+                              
+                              p-plan:isStepOfPlan DeploymentPlan:TFIDF_DEP_PLAN ;
+                              
+                              wicus-stack:hasDeploymentScript DeploymentsScript:TFIDF_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/TF_DEP_STEP
+
+DeploymentStep:TF_DEP_STEP rdf:type p-plan:Step ,
+                                    wicus-stack:DeploymentStep ,
+                                    owl:Thing ;
+                           
+                           wicus-stack:isDeploymentStepOf DeploymentPlan:TF_DEP_PLAN ;
+                           
+                           p-plan:isStepOfPlan DeploymentPlan:TF_DEP_PLAN ;
+                           
+                           wicus-stack:hasDeploymentScript DeploymentsScript:TF_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentStep/WEKA_DEP_STEP
+
+DeploymentStep:WEKA_DEP_STEP rdf:type p-plan:Step ,
+                                      wicus-stack:DeploymentStep ,
+                                      owl:Thing ;
+                             
+                             p-plan:isStepOfPlan DeploymentPlan:WEKA_DEP_PLAN ;
+                             
+                             wicus-stack:isDeploymentStepOf DeploymentPlan:WEKA_DEP_PLAN ;
+                             
+                             wicus-stack:hasDeploymentScript DeploymentsScript:WEKA_DEP_SCRIPT .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/CF_DEP_SCRIPT
+
+DeploymentsScript:CF_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                         owl:Thing ;
+                                
+                                wicus-stack:script "deploy_jar.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/CHISQUARED_DEP_SCRIPT
+
+DeploymentsScript:CHISQUARED_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                                 owl:Thing ;
+                                        
+                                        wicus-stack:script "deploy_m.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/CLUTO_DEP_SCRIPT
+
+DeploymentsScript:CLUTO_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:script "CLUTO_script.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/DF_DEP_SCRIPT
+
+DeploymentsScript:DF_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                         owl:Thing ;
+                                
+                                wicus-stack:script "deploy_jar.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/FEATURESELECTION_DEP_SCRIPT
+
+DeploymentsScript:FEATURESELECTION_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                                       owl:Thing ;
+                                              
+                                              wicus-stack:script "deploy_jar.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/FORMATARFF_DEP_SCRIPT
+
+DeploymentsScript:FORMATARFF_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                                 owl:Thing ;
+                                        
+                                        wicus-stack:script "deploy_jar.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/FORMATCLUTO_DEP_SCRIPT
+
+DeploymentsScript:FORMATCLUTO_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                                  owl:Thing ;
+                                         
+                                         wicus-stack:script "deploy_jar.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/IDF_DEP_SCRIPT
+
+DeploymentsScript:IDF_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                          owl:Thing ;
+                                 
+                                 wicus-stack:script "deploy_jar.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/INFORMATIONGAIN_DEP_SCRIPT
+
+DeploymentsScript:INFORMATIONGAIN_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                                      owl:Thing ;
+                                             
+                                             wicus-stack:script "deploy_m.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/JAVA_DEP_SCRIPT
+
+DeploymentsScript:JAVA_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                           owl:Thing ;
+                                  
+                                  wicus-stack:script "JAVA_script.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/LIBLINEAR_1_8_DEP_SCRIPT
+
+DeploymentsScript:LIBLINEAR_1_8_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                                    owl:Thing ;
+                                           
+                                           wicus-stack:script "deploy_jar.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/LIBLINEAR_DEP_SCRIPT
+
+DeploymentsScript:LIBLINEAR_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                                owl:Thing ;
+                                       
+                                       wicus-stack:script "deploy_jar.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/LIBSVM_DEP_SCRIPT
+
+DeploymentsScript:LIBSVM_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                             owl:Thing ;
+                                    
+                                    wicus-stack:script "deploy_jar.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/LIBSVM_LIB_DEP_SCRIPT
+
+DeploymentsScript:LIBSVM_LIB_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                                 owl:Thing ;
+                                        
+                                        wicus-stack:script "deploy_jar.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/LOVINSSTEMMER_DEP_SCRIPT
+
+DeploymentsScript:LOVINSSTEMMER_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                                    owl:Thing ;
+                                           
+                                           wicus-stack:script "deploy_jar.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/MATLAB_DEP_SCRIPT
+
+DeploymentsScript:MATLAB_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                             owl:Thing ;
+                                    
+                                    wicus-stack:script "MATLAB_script.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/MULTI2SINGLE_DEP_SCRIPT
+
+DeploymentsScript:MULTI2SINGLE_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                                   owl:Thing ;
+                                          
+                                          wicus-stack:script "deploy_jar.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/MUTUALINFORMATION_DEP_SCRIPT
+
+DeploymentsScript:MUTUALINFORMATION_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                                        owl:Thing ;
+                                               
+                                               wicus-stack:script "deploy_m.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/PORTERSTEMMER_DEP_SCRIPT
+
+DeploymentsScript:PORTERSTEMMER_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                                    owl:Thing ;
+                                           
+                                           wicus-stack:script "deploy_jar.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/REMOVESTOPWORDS_DEP_SCRIPT
+
+DeploymentsScript:REMOVESTOPWORDS_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                                      owl:Thing ;
+                                             
+                                             wicus-stack:script "deploy_jar.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/SMALLWORDS_DEP_SCRIPT
+
+DeploymentsScript:SMALLWORDS_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                                 owl:Thing ;
+                                        
+                                        wicus-stack:script "deploy_jar.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/STOPWORDS_DEP_SCRIPT
+
+DeploymentsScript:STOPWORDS_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                                owl:Thing ;
+                                       
+                                       wicus-stack:script "deploy_jar.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/TFIDF_DEP_SCRIPT
+
+DeploymentsScript:TFIDF_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:script "deploy_jar.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/TF_DEP_SCRIPT
+
+DeploymentsScript:TF_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                         owl:Thing ;
+                                
+                                wicus-stack:script "deploy_jar.sh" .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/DeploymentsScript/WEKA_DEP_SCRIPT
+
+DeploymentsScript:WEKA_DEP_SCRIPT rdf:type wicus-stack:DeploymentScript ,
+                                           owl:Thing ;
+                                  
+                                  wicus-stack:script "WEKA_script.sh" .
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/CF_CONF_PAR_JAR
+
+ConfigurationParameter:CF_CONF_PAR_JAR rdf:type p-plan:Variable ,
+                                            wicus-stack:ConfigurationParameter ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:parameterName "JAR_FILE"^^xsd:string ;
+                                   
+                                   wicus-stack:parameterValue "REPO:jar/cf.jar"^^xsd:string ;
+                                   
+                                   wicus-stack:isConfigurationParameterOf ConfigurationInfo:CF_CONF_INFO ;
+                                   
+                                   p-plan:isInputVarOf ConfigurationInfo:CF_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/CHISQUARED_CONF_PAR_JAR
+
+ConfigurationParameter:CHISQUARED_CONF_PAR_JAR rdf:type p-plan:Variable ,
+                                                    wicus-stack:ConfigurationParameter ,
+                                                    owl:Thing ;
+                                           
+                                           wicus-stack:parameterName "M_FILE"^^xsd:string ;
+                                           
+                                           wicus-stack:parameterValue "REPO:matlab/ChiSqueared.m"^^xsd:string ;
+                                           
+                                           p-plan:isInputVarOf ConfigurationInfo:CHISQUARED_CONF_INFO ;
+                                           
+                                           wicus-stack:isConfigurationParameterOf ConfigurationInfo:CHISQUARED_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/DF_CONF_PAR_JAR
+
+ConfigurationParameter:DF_CONF_PAR_JAR rdf:type p-plan:Variable ,
+                                            wicus-stack:ConfigurationParameter ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:parameterName "JAR_FILE"^^xsd:string ;
+                                   
+                                   wicus-stack:parameterValue "REPO:jar/df.jar"^^xsd:string ;
+                                   
+                                   p-plan:isInputVarOf ConfigurationInfo:DF_CONF_INFO ;
+                                   
+                                   wicus-stack:isConfigurationParameterOf ConfigurationInfo:DF_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/FORMATARFF_CONF_PAR_JAR
+
+ConfigurationParameter:FORMATARFF_CONF_PAR_JAR rdf:type p-plan:Variable ,
+                                                    wicus-stack:ConfigurationParameter ,
+                                                    owl:Thing ;
+                                           
+                                           wicus-stack:parameterName "JAR_FILE"^^xsd:string ;
+                                           
+                                           wicus-stack:parameterValue "REPO:jar/DIR:"^^xsd:string ;
+                                           
+                                           wicus-stack:isConfigurationParameterOf ConfigurationInfo:FORMATARFF_CONF_INFO ;
+                                           
+                                           p-plan:isInputVarOf ConfigurationInfo:FORMATARFF_CONF_INFO .
+
+
+
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/IDF_CONF_PAR_JAR
+
+ConfigurationParameter:IDF_CONF_PAR_JAR rdf:type p-plan:Variable ,
+                                             wicus-stack:ConfigurationParameter ,
+                                             owl:Thing ;
+                                    
+                                    wicus-stack:parameterName "JAR_FILE"^^xsd:string ;
+                                    
+                                    wicus-stack:parameterValue "REPO:jar/idf.jar:"^^xsd:string ;
+                                    
+                                    p-plan:isInputVarOf ConfigurationInfo:IDF_CONF_INFO ;
+                                    
+                                    wicus-stack:isConfigurationParameterOf ConfigurationInfo:IDF_CONF_INFO .
+
+
+
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/LIBLINEAR_1_8_CONF_PAR_JAR
+
+ConfigurationParameter:LIBLINEAR_1_8_CONF_PAR_JAR rdf:type p-plan:Variable ,
+                                                       wicus-stack:ConfigurationParameter ,
+                                                       owl:Thing ;
+                                              
+                                              wicus-stack:parameterName "JAR_FILE"^^xsd:string ;
+                                              
+                                              wicus-stack:parameterValue "REPO:jar/liblinear-1.8.jar"^^xsd:string ;
+                                              
+                                              wicus-stack:isConfigurationParameterOf ConfigurationInfo:LIBLINEAR_1_8_CONF_INFO ;
+                                              
+                                              p-plan:isInputVarOf ConfigurationInfo:LIBLINEAR_1_8_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/LIBLINEAR_CONF_PAR_JAR
+
+ConfigurationParameter:LIBLINEAR_CONF_PAR_JAR rdf:type p-plan:Variable ,
+                                                   wicus-stack:ConfigurationParameter ,
+                                                   owl:Thing ;
+                                          
+                                          wicus-stack:parameterName "JAR_FILE"^^xsd:string ;
+                                          
+                                          wicus-stack:parameterValue "REPO:jar/LibLINEAR.jar"^^xsd:string ;
+                                          
+                                          wicus-stack:isConfigurationParameterOf ConfigurationInfo:LIBLINEAR_CONF_INFO ;
+                                          
+                                          p-plan:isInputVarOf ConfigurationInfo:LIBLINEAR_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/LIBSVM_CONF_PAR_JAR
+
+ConfigurationParameter:LIBSVM_CONF_PAR_JAR rdf:type p-plan:Variable ,
+                                                wicus-stack:ConfigurationParameter ,
+                                                owl:Thing ;
+                                       
+                                       wicus-stack:parameterName "JAR_FILE"^^xsd:string ;
+                                       
+                                       wicus-stack:parameterValue "REPO:jar/libsvm.jar"^^xsd:string ;
+                                       
+                                       wicus-stack:isConfigurationParameterOf ConfigurationInfo:LIBSVM_CONF_INFO ;
+                                       
+                                       p-plan:isInputVarOf ConfigurationInfo:LIBSVM_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/LOVINSSTEMMER_CONF_PAR_JAR
+
+ConfigurationParameter:LOVINSSTEMMER_CONF_PAR_JAR rdf:type p-plan:Variable ,
+                                                       wicus-stack:ConfigurationParameter ,
+                                                       owl:Thing ;
+                                              
+                                              wicus-stack:parameterName "JAR_FILE"^^xsd:string ;
+                                              
+                                              wicus-stack:parameterValue "REPO:jar/LovisStemmer.jar"^^xsd:string ;
+                                              
+                                              wicus-stack:isConfigurationParameterOf ConfigurationInfo:LOVINSSTEMMER_CONF_INFO ;
+                                              
+                                              p-plan:isInputVarOf ConfigurationInfo:LOVINSSTEMMER_CONF_INFO .
+
+
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/MULTI2SINGLE_CONF_PAR_JAR
+
+ConfigurationParameter:MULTI2SINGLE_CONF_PAR_JAR rdf:type p-plan:Variable ,
+                                                      wicus-stack:ConfigurationParameter ,
+                                                      owl:Thing ;
+                                             
+                                             wicus-stack:parameterName "JAR_FILE"^^xsd:string ;
+                                             
+                                             wicus-stack:parameterValue "REPO:jar/Multi2Single.jar"^^xsd:string ;
+                                             
+                                             p-plan:isInputVarOf ConfigurationInfo:MULTI2SINGLE_CONF_INFO ;
+                                             
+                                             wicus-stack:isConfigurationParameterOf ConfigurationInfo:MULTI2SINGLE_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/PORTERSTEMMER_CONF_PAR_JAR
+
+ConfigurationParameter:PORTERSTEMMER_CONF_PAR_JAR rdf:type p-plan:Variable ,
+                                                       wicus-stack:ConfigurationParameter ,
+                                                       owl:Thing ;
+                                              
+                                              wicus-stack:parameterName "JAR_FILE"^^xsd:string ;
+                                              
+                                              wicus-stack:parameterValue "REPO:jar/PorterStemmer.jar"^^xsd:string ;
+                                              
+                                              wicus-stack:isConfigurationParameterOf ConfigurationInfo:PORTERSTEMMER_CONF_INFO ;
+                                              
+                                              p-plan:isInputVarOf ConfigurationInfo:PORTERSTEMMER_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/REMOVESTOPWORDS_CONF_PAR_JAR
+
+ConfigurationParameter:REMOVESTOPWORDS_CONF_PAR_JAR rdf:type p-plan:Variable ,
+                                                         wicus-stack:ConfigurationParameter ,
+                                                         owl:Thing ;
+                                                
+                                                wicus-stack:parameterName "JAR_FILE"^^xsd:string ;
+                                                
+                                                wicus-stack:parameterValue "REPO:jar/RemoveStopWords.jar"^^xsd:string ;
+                                                
+                                                wicus-stack:isConfigurationParameterOf ConfigurationInfo:REMOVESTOPWORDS_CONF_INFO ;
+                                                
+                                                p-plan:isInputVarOf ConfigurationInfo:REMOVESTOPWORDS_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/SMALLWORDS_CONF_PAR_JAR
+
+ConfigurationParameter:SMALLWORDS_CONF_PAR_JAR rdf:type p-plan:Variable ,
+                                                    wicus-stack:ConfigurationParameter ,
+                                                    owl:Thing ;
+                                           
+                                           wicus-stack:parameterName "JAR_FILE"^^xsd:string ;
+                                           
+                                           wicus-stack:parameterValue "REPO:jar/SmallWords.jar"^^xsd:string ;
+                                           
+                                           wicus-stack:isConfigurationParameterOf ConfigurationInfo:SMALLWORDS_CONF_INFO ;
+                                           
+                                           p-plan:isInputVarOf ConfigurationInfo:SMALLWORDS_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/STOPWORDS_CONF_PAR_JAR
+
+ConfigurationParameter:STOPWORDS_CONF_PAR_JAR rdf:type p-plan:Variable ,
+                                                   wicus-stack:ConfigurationParameter ,
+                                                   owl:Thing ;
+                                          
+                                          wicus-stack:parameterName "JAR_FILE"^^xsd:string ;
+                                          
+                                          wicus-stack:parameterValue "REPO:jar/StopWords.jar"^^xsd:string ;
+                                          
+                                          p-plan:isInputVarOf ConfigurationInfo:STOPWORDS_CONF_INFO ;
+                                          
+                                          wicus-stack:isConfigurationParameterOf ConfigurationInfo:STOPWORDS_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/TFIDF_CONF_PAR_JAR
+
+ConfigurationParameter:TFIDF_CONF_PAR_JAR rdf:type p-plan:Variable ,
+                                               wicus-stack:ConfigurationParameter ,
+                                               owl:Thing ;
+                                      
+                                      wicus-stack:parameterName "JAR_FILE"^^xsd:string ;
+                                      
+                                      wicus-stack:parameterValue "REPO:jar/tf_idf.jar"^^xsd:string ;
+                                      
+                                      p-plan:isInputVarOf ConfigurationInfo:TFIDF_CONF_INFO ;
+                                      
+                                      wicus-stack:isConfigurationParameterOf ConfigurationInfo:TFIDF_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/ConfigurationParameter/TF_CONF_PAR_JAR
+
+ConfigurationParameter:TF_CONF_PAR_JAR rdf:type p-plan:Variable ,
+                                            wicus-stack:ConfigurationParameter ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:parameterName "JAR_FILE"^^xsd:string ;
+                                   
+                                   wicus-stack:parameterValue "REPO:jar/tf.jar"^^xsd:string ;
+                                   
+                                   wicus-stack:isConfigurationParameterOf ConfigurationInfo:TF_CONF_INFO ;
+                                   
+                                   p-plan:isInputVarOf ConfigurationInfo:TF_CONF_INFO .
+
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/CF_SOFT_BIN
+
+SoftwareBinary:CF_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                    owl:Thing ;
+                           
+                           wicus-stack:binary "REPO:jar/cf.jar"^^xsd:string .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/CHISQUARED_SOFT_BIN
+
+SoftwareBinary:CHISQUARED_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:binary "REPO:matlab/ChiSquared.m"^^xsd:string .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/DF_SOFT_BIN
+
+SoftwareBinary:DF_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                    owl:Thing ;
+                           
+                           wicus-stack:binary "REPO:jar/df.jar"^^xsd:string .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/FEATURESELECTION_SOFT_BIN
+
+SoftwareBinary:FEATURESELECTION_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                                  owl:Thing ;
+                                         
+                                         wicus-stack:binary "REPO:jar/FeatureSelection.jar"^^xsd:string .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/FORMATARFF_SOFT_BIN
+
+SoftwareBinary:FORMATARFF_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:binary "REPO:jar/FormatArff.jar"^^xsd:string .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/FORMATCLUTO_SOFT_BIN
+
+SoftwareBinary:FORMATCLUTO_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                             owl:Thing ;
+                                    
+                                    wicus-stack:binary "REPO:jar/FormatCluto.jar"^^xsd:string .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/IDF_SOFT_BIN
+
+SoftwareBinary:IDF_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                     owl:Thing ;
+                            
+                            wicus-stack:binary "REPO:jar/idf.jar"^^xsd:string .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/INFORMATIONGAIN_SOFT_BIN
+
+SoftwareBinary:INFORMATIONGAIN_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                                 owl:Thing ;
+                                        
+                                        wicus-stack:binary "REPO:matlab/InformationGain.m"^^xsd:string .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/LIBLINEAR_1_8_SOFT_BIN
+
+SoftwareBinary:LIBLINEAR_1_8_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                               owl:Thing ;
+                                      
+                                      wicus-stack:binary "REPO:jar/liblinear-1.8.jar"^^rdfs:Literal .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/LIBLINEAR_SOFT_BIN
+
+SoftwareBinary:LIBLINEAR_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                           owl:Thing ;
+                                  
+                                  wicus-stack:binary "REPO:jar/LibLINEAR.jar"^^rdfs:Literal .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/LIBSVM_LIB_SOFT_BIN
+
+SoftwareBinary:LIBSVM_LIB_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:binary "REPO:jar/libsvm.jar"^^rdfs:Literal .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/LIBSVM_SOFT_BIN
+
+SoftwareBinary:LIBSVM_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                        owl:Thing ;
+                               
+                               wicus-stack:binary "REPO:jar/LibSVM.jar"^^rdfs:Literal .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/LOVINSSTEMMER_SOFT_BIN
+
+SoftwareBinary:LOVINSSTEMMER_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                               owl:Thing ;
+                                      
+                                      wicus-stack:binary "REPO:jar/LovinsStemmer.jar"^^xsd:string .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/MULTI2SINGLE_SOFT_BIN
+
+SoftwareBinary:MULTI2SINGLE_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                              owl:Thing ;
+                                     
+                                     wicus-stack:binary "REPO:jar/Multi2Single.jar"^^xsd:string .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/MUTUALINFORMATION_SOFT_BIN
+
+SoftwareBinary:MUTUALINFORMATION_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                                   owl:Thing ;
+                                          
+                                          wicus-stack:binary "REPO:matlab/MutualInformation.m"^^xsd:string .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/PORTERSTEMMER_SOFT_BIN
+
+SoftwareBinary:PORTERSTEMMER_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                               owl:Thing ;
+                                      
+                                      wicus-stack:binary "REPO:jar/PorterStemmer.jar"^^xsd:string .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/REMOVESTOPWORDS_SOFT_BIN
+
+SoftwareBinary:REMOVESTOPWORDS_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                                 owl:Thing ;
+                                        
+                                        wicus-stack:binary "REPO:jar/RemoveStopWords.jar"^^rdfs:Literal .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/SMALLWORDS_SOFT_BIN
+
+SoftwareBinary:SMALLWORDS_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:binary "REPO:jar/SmallWords.jar"^^xsd:string .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/STOPWORDS_SOFT_BIN
+
+SoftwareBinary:STOPWORDS_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                           owl:Thing ;
+                                  
+                                  wicus-stack:binary "REPO:jar/StopWords.jar"^^xsd:string .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/TFIDF_SOFT_BIN
+
+SoftwareBinary:TFIDF_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                       owl:Thing ;
+                              
+                              wicus-stack:binary "REPO:jar/tf_idf.jar"^^xsd:string .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareBinary/TF_SOFT_BIN
+
+SoftwareBinary:TF_SOFT_BIN rdf:type wicus-stack:SoftwareBinary ,
+                                    owl:Thing ;
+                           
+                           wicus-stack:binary "REPO:jar/tf.jar"^^xsd:string .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/CF_SOFT_COMP
+
+SoftwareComponent:CF_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                        owl:Thing ;
+                               
+                               wicus-stack:hasConfigurationInfo ConfigurationInfo:CF_CONF_INFO ;
+                               
+                               wicus-stack:hasBinary SoftwareBinary:CF_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/CHISQUARED_SOFT_COMP
+
+SoftwareComponent:CHISQUARED_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                                owl:Thing ;
+                                       
+                                       wicus-stack:hasConfigurationInfo ConfigurationInfo:CHISQUARED_CONF_INFO ;
+                                       
+                                       wicus-stack:hasBinary SoftwareBinary:CHISQUARED_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/CLUTO_SOFT_COMP
+
+SoftwareComponent:CLUTO_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                           owl:Thing ;
+                                  
+                                  wicus-stack:hasConfigurationInfo ConfigurationInfo:CLUTO_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/DF_SOFT_COMP
+
+SoftwareComponent:DF_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                        owl:Thing ;
+                               
+                               wicus-stack:hasConfigurationInfo ConfigurationInfo:DF_CONF_INFO ;
+                               
+                               wicus-stack:hasBinary SoftwareBinary:DF_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/FEATURESELECTION_SOFT_COMP
+
+SoftwareComponent:FEATURESELECTION_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                                      owl:Thing ;
+                                             
+                                             wicus-stack:hasConfigurationInfo ConfigurationInfo:FEATURESELECTION_CONF_INFO ;
+                                             
+                                             wicus-stack:hasBinary SoftwareBinary:FEATURESELECTION_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/FORMATARFF_SOFT_COMP
+
+SoftwareComponent:FORMATARFF_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                                owl:Thing ;
+                                       
+                                       wicus-stack:hasConfigurationInfo ConfigurationInfo:FORMATARFF_CONF_INFO ;
+                                       
+                                       wicus-stack:hasBinary SoftwareBinary:FORMATARFF_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/FORMATCLUTO_SOFT_COMP
+
+SoftwareComponent:FORMATCLUTO_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                                 owl:Thing ;
+                                        
+                                        wicus-stack:hasConfigurationInfo ConfigurationInfo:FORMATCLUTO_CONF_INFO ;
+                                        
+                                        wicus-stack:hasBinary SoftwareBinary:FORMATCLUTO_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/IDF_SOFT_COMP
+
+SoftwareComponent:IDF_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                         owl:Thing ;
+                                
+                                wicus-stack:hasConfigurationInfo ConfigurationInfo:IDF_CONF_INFO ;
+                                
+                                wicus-stack:hasBinary SoftwareBinary:IDF_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/INFORMATIONGAIN_SOFT_COMP
+
+SoftwareComponent:INFORMATIONGAIN_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                                     owl:Thing ;
+                                            
+                                            wicus-stack:hasConfigurationInfo ConfigurationInfo:INFORMATIONGAIN_CONF_INFO ;
+                                            
+                                            wicus-stack:hasBinary SoftwareBinary:INFORMATIONGAIN_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/JAVA_SOFT_COMP
+
+SoftwareComponent:JAVA_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                          owl:Thing ;
+                                 
+                                 wicus-stack:hasConfigurationInfo ConfigurationInfo:JAVA_CONF_INFO ;
+                                 
+                                 wicus-stack:hasVersion Version:JAVA_VERSION .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/LIBLINEAR_1_8_SOFT_COMP
+
+SoftwareComponent:LIBLINEAR_1_8_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                                   owl:Thing ;
+                                          
+                                          wicus-stack:hasConfigurationInfo ConfigurationInfo:LIBLINEAR_1_8_CONF_INFO ;
+                                          
+                                          wicus-stack:hasBinary SoftwareBinary:LIBLINEAR_1_8_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/LIBLINEAR_SOFT_COMP
+
+SoftwareComponent:LIBLINEAR_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                               owl:Thing ;
+                                      
+                                      wicus-stack:hasConfigurationInfo ConfigurationInfo:LIBLINEAR_CONF_INFO ;
+                                      
+                                      wicus-stack:hasBinary SoftwareBinary:LIBLINEAR_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/LIBSVM_LIB_SOFT_COMP
+
+SoftwareComponent:LIBSVM_LIB_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                                owl:Thing ;
+                                       
+                                       wicus-stack:hasConfigurationInfo ConfigurationInfo:LIBSVM_LIB_CONF_INFO ;
+                                       
+                                       wicus-stack:hasBinary SoftwareBinary:LIBSVM_LIB_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/LIBSVM_SOFT_COMP
+
+SoftwareComponent:LIBSVM_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:hasConfigurationInfo ConfigurationInfo:LIBSVM_CONF_INFO ;
+                                   
+                                   wicus-stack:hasBinary SoftwareBinary:LIBSVM_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/LOVINSSTEMMER_SOFT_COMP
+
+SoftwareComponent:LOVINSSTEMMER_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                                   owl:Thing ;
+                                          
+                                          wicus-stack:hasConfigurationInfo ConfigurationInfo:LOVINSSTEMMER_CONF_INFO ;
+                                          
+                                          wicus-stack:hasBinary SoftwareBinary:LOVINSSTEMMER_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/MATLAB_SOFT_COMP
+
+SoftwareComponent:MATLAB_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                            owl:Thing ;
+                                   
+                                   wicus-stack:hasConfigurationInfo ConfigurationInfo:MATLAB_CONF_INFO ;
+                                   
+                                   wicus-stack:hasVersion Version:MATLAB_VERSION .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/MULTI2SINGLE_SOFT_COMP
+
+SoftwareComponent:MULTI2SINGLE_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                                  owl:Thing ;
+                                         
+                                         wicus-stack:hasConfigurationInfo ConfigurationInfo:MULTI2SINGLE_CONF_INFO ;
+                                         
+                                         wicus-stack:hasBinary SoftwareBinary:MULTI2SINGLE_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/MUTUALINFORMATION_SOFT_COMP
+
+SoftwareComponent:MUTUALINFORMATION_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                                       owl:Thing ;
+                                              
+                                              wicus-stack:hasConfigurationInfo ConfigurationInfo:MUTUALINFORMATION_CONF_INFO ;
+                                              
+                                              wicus-stack:hasBinary SoftwareBinary:MUTUALINFORMATION_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/PORTERSTEMMER_SOFT_COMP
+
+SoftwareComponent:PORTERSTEMMER_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                                   owl:Thing ;
+                                          
+                                          wicus-stack:hasConfigurationInfo ConfigurationInfo:PORTERSTEMMER_CONF_INFO ;
+                                          
+                                          wicus-stack:hasBinary SoftwareBinary:PORTERSTEMMER_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/REMOVESTOPWORDS_SOFT_COMP
+
+SoftwareComponent:REMOVESTOPWORDS_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                                     owl:Thing ;
+                                            
+                                            wicus-stack:hasConfigurationInfo ConfigurationInfo:REMOVESTOPWORDS_CONF_INFO ;
+                                            
+                                            wicus-stack:hasBinary SoftwareBinary:REMOVESTOPWORDS_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/SMALLWORDS_SOFT_COMP
+
+SoftwareComponent:SMALLWORDS_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                                owl:Thing ;
+                                       
+                                       wicus-stack:hasConfigurationInfo ConfigurationInfo:SMALLWORDS_CONF_INFO ;
+                                       
+                                       wicus-stack:hasBinary SoftwareBinary:SMALLWORDS_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/STOPWORDS_SOFT_COMP
+
+SoftwareComponent:STOPWORDS_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                               owl:Thing ;
+                                      
+                                      wicus-stack:hasConfigurationInfo ConfigurationInfo:STOPWORDS_CONF_INFO ;
+                                      
+                                      wicus-stack:hasBinary SoftwareBinary:STOPWORDS_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/TFIDF_SOFT_COMP
+
+SoftwareComponent:TFIDF_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                           owl:Thing ;
+                                  
+                                  wicus-stack:hasConfigurationInfo ConfigurationInfo:TFIDF_CONF_INFO ;
+                                  
+                                  wicus-stack:hasBinary SoftwareBinary:TFIDF_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/TF_SOFT_COMP
+
+SoftwareComponent:TF_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                        owl:Thing ;
+                               
+                               wicus-stack:hasConfigurationInfo ConfigurationInfo:TF_CONF_INFO ;
+                               
+                               wicus-stack:hasBinary SoftwareBinary:TF_SOFT_BIN .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/SoftwareComponent/WEKA_SOFT_COMP
+
+SoftwareComponent:WEKA_SOFT_COMP rdf:type wicus-stack:SoftwareComponent ,
+                                          owl:Thing ;
+                                 
+                                 wicus-stack:hasConfigurationInfo ConfigurationInfo:WEKA_CONF_INFO .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/Version/JAVA_VERSION
+
+Version:JAVA_VERSION rdf:type wicus-stack:Version ,
+                              owl:Thing ;
+                     
+                     wicus-stack:versionNumber "1.7.0_21"^^xsd:string .
+
+
+
+###  http://purl.org/net/wicus-stack/resource/Version/MATLAB_VERSION
+
+Version:MATLAB_VERSION rdf:type wicus-stack:Version ,
+                                owl:Thing ;
+                       
+                       wicus-stack:versionNumber "2012aRelease"^^xsd:string .
+
+SoftwareStack:BAGGLOCLUSTERING_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:CLUTO_SOFT_STACK .
+                                         
+                                         
+                                         
+                                         
+SoftwareStack:KNNVALIDATOR_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:WEKA_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:CHISQUARED_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:MATLAB_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:GRAPHCLUSTERING_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:CLUTO_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:TFIDF_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:JAVA_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:DECISIONTREEVALIDATOR_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:WEKA_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:CF_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:JAVA_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:PORTERSTEMMER_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:JAVA_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:LOVINSSTEMMER_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:JAVA_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:RBRCLUSTERING_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:CLUTO_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:TF_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:JAVA_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:DF_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:JAVA_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:LIBSVMVALIDATOR_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:WEKA_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:LIBSVMVALIDATOR_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:LIBSVM_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:LIBSVMVALIDATOR_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:LIBSVM_LIB_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:STOPWORDS_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:REMOVESTOPWORDS_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:STOPWORDS_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:JAVA_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:FEATURESELECTION_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:JAVA_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:SMALLWORDS_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:JAVA_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:AGGLOCLUSTERING_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:CLUTO_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:LIBLINEARVALIDATOR_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:WEKA_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:LIBLINEARVALIDATOR_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:LIBLINEAR_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:LIBLINEARVALIDATOR_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:LIBLINEAR_1_8_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:DIRECTCLUSTERING_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:CLUTO_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:IDF_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:JAVA_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:FORMATCLUTO_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:JAVA_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:INFORMATIONGAIN_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:MATLAB_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:FORMATARFF_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:JAVA_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:RBCLUSTERING_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:CLUTO_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:NAIVEBAYESVALIDATOR_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:WEKA_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:MUTUALINFORMATION_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:MATLAB_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:MULTI2SINGLE_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                                  :Thing ;
+                                         
+                                         wicus-stack:dependsOn SoftwareStack:JAVA_SOFT_STACK .
+                                         
+                                         
+SoftwareStack:LIBLINEAR_1_8_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:LIBLINEAR_1_8_SOFT_COMP .
+                               
+                               
+SoftwareStack:JAVA_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:JAVA_SOFT_COMP .
+
+
+SoftwareStack:JAVA_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:dependsOn SoftwareStack:Ubuntu_12_04_OS_SOFT_STACK .
+                               
+                               
+SoftwareStack:Ubuntu_12_04_OS_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:Ubuntu_12_04_OS_SWC .
+                               
+                               
+SoftwareStack:JAVA_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:JAVA_SOFT_COMP .
+                               
+                               
+SoftwareStack:MULTI2SINGLE_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:MULTI2SINGLE_SOFT_COMP .
+                               
+                               
+SoftwareStack:MATLAB_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:dependsOn SoftwareStack:Ubuntu_12_04_OS_SOFT_STACK ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:MATLAB_SOFT_COMP .
+                               
+                               
+SoftwareStack:FORMATARFF_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:FORMATARFF_SOFT_COMP .
+                               
+                               
+SoftwareStack:STOPWORDS_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:STOPWORDS_SOFT_COMP .
+                               
+                               
+SoftwareStack:TF_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:TF_SOFT_COMP .
+                               
+                               
+SoftwareStack:LIBSVM_LIB_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:LIBSVM_LIB_SOFT_COMP .
+                               
+                               
+SoftwareStack:FEATURESELECTION_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:FEATURESELECTION_SOFT_COMP .
+                               
+                               
+SoftwareStack:CF_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:CF_SOFT_COMP .
+                               
+                               
+SoftwareStack:MUTUALINFORMATION_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:MUTUALINFORMATION_SOFT_COMP .
+                               
+                               
+SoftwareStack:LIBSVM_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:LIBSVM_SOFT_COMP .
+                               
+                               
+SoftwareStack:CLUTO_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:CLUTO_SOFT_COMP .
+                               
+                               
+SoftwareStack:IDF_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:IDF_SOFT_COMP .
+                               
+                               
+SoftwareStack:FORMATCLUTO_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:FORMATCLUTO_SOFT_COMP .
+                               
+                               
+SoftwareStack:DF_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:DF_SOFT_COMP .
+                               
+                               
+SoftwareStack:SMALLWORDS_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:SMALLWORDS_SOFT_COMP .
+                               
+                               
+SoftwareStack:PORTERSTEMMER_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:PORTERSTEMMER_SOFT_COMP .
+                               
+                               
+SoftwareStack:CHISQUARED_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:CHISQUARED_SOFT_COMP .
+                               
+                               
+SoftwareStack:WEKA_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:WEKA_SOFT_COMP .
+                               
+                               
+SoftwareStack:REMOVESTOPWORDS_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:REMOVESTOPWORDS_SOFT_COMP .
+                               
+SoftwareStack:REMOVESTOPWORDS_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                                         
+                               wicus-stack:dependsOn SoftwareStack:JAVA_SOFT_STACK .
+                               
+                               
+SoftwareStack:LIBLINEAR_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:LIBLINEAR_SOFT_COMP .
+                               
+                               
+SoftwareStack:TFIDF_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:TFIDF_SOFT_COMP .
+                               
+                               
+SoftwareStack:LOVINSSTEMMER_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:LOVINSSTEMMER_SOFT_COMP .
+                               
+                               
+SoftwareStack:INFORMATIONGAIN_SOFT_STACK rdf:type wicus-stack:SoftwareStack ,
+                                        :Thing ;
+                               
+                               wicus-stack:hasSoftwareComponent SoftwareComponent:INFORMATIONGAIN_SOFT_COMP .
+                               
+                                                                        
+                                         
+
+
+
+###  Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net
+

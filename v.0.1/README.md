@@ -20,4 +20,4 @@ Modify your conf.txt file to include ALL the following parameters:
 
 - CLOUD_PROV_FILE: Path to the text file containing a list of URIs defining the available Cloud Providers.
 
-Comments are allowed by introducing a '#' at the beggining of the line.
+Sample values for each parameters are provided in this demo. Comments are allowed by introducing a '#' at the beggining of the line.
