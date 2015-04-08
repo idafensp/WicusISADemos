@@ -3,7 +3,7 @@ WicusISADemos
 
 Demos of the WICUS Infrastructure Specification Algorithm
 
-Version 0.2
+Version 0.3
 
 - Usage:
 
