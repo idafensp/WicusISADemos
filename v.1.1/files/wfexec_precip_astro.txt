@@ -1,0 +1,24 @@
+    ##################################
+    # INT_EXT WF EXECUTION COMMANDS  #
+    ##################################  
+    
+    # DATA STAGE-IN PROCESS
+    # copy our scripts to the instance
+    exp.put(["inst0"], "datastage.sh", "/home/%USER%/datastage.sh",  user="%USER%")
+  
+    # setup
+    exp.run(["inst0"], "chmod 755 /home/%USER%/datastage.sh", user="%USER%")
+
+    # copy data files
+    exp.run(["inst0"], "/home/%USER%/datastage.sh -URL https://dl.dropboxusercontent.com/u/4192819/ -FILE astro.tar.gz -DEST /home/%USER%/dispel4py/", user="%USER%")
+
+    
+    # copy our scripts to the instance
+    exp.put(["inst0"], "workflow_astro.sh", "/home/%USER%/workflow_astro.sh",
+            user="%USER%")
+  
+    # setup
+    exp.run(["inst0"], "chmod 755 /home/%USER%/workflow_astro.sh", user="%USER%")
+
+    # run our workflow
+    exp.run(["inst0"], "/home/%USER%/workflow_astro.sh /home/%USER%/dispel4py/", user="%USER%")

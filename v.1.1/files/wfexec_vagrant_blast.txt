@@ -1,0 +1,11 @@
+
+	################################
+	# BLAST WF EXECUTION COMMANDS  #
+	################################  
+	
+	# DATA STAGE-IN PROCESS
+	# copy data and wf files
+	config.vm.provision :shell, path: "datastage.sh", args: [ "-URL", "https://s3.amazonaws.com/blasttestdata/", "-FILE", "blastwf.tar.gz", "-DEST", "/home/%USER%/blast/"], privileged: false
+
+	# run our workflow
+	config.vm.provision :shell, path: "workflow_blast.sh", args: [ "/home/%USER%/blast/", "/home/%USER%/cctools/"], privileged: false

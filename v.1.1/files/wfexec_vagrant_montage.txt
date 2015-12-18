@@ -1,0 +1,13 @@
+    ##################################
+    # MONTAGE WF EXECUTION COMMANDS  #
+    ##################################  
+
+    # DATA STAGE-IN PROCESS
+    config.vm.provision :shell, path: "stageMontageData.sh", args: ["-SOURCE_FILE_PATH", "https://raw.githubusercontent.com/rafaelfsilva/workflow-reproducibility/master/components/montage/montagedata.tar.gz", "-DEST_FILE_PATH", "/home/%USER%/"], privileged: false
+
+    # copy our conf file to the instance
+    config.vm.provision "file", source: "workflow.sh", destination: "~/workflow.sh"
+
+    # run Montage workflow
+	config.vm.provision :shell, inline: "cd ~/montage/0.1deg/ && ~/workflow.sh", privileged: false
+	

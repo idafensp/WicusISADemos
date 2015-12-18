@@ -1,0 +1,24 @@
+    ################################
+    # BLAST WF EXECUTION COMMANDS  #
+    ################################  
+    
+    # DATA STAGE-IN PROCESS
+    # copy our scripts to the instance
+    exp.put(["inst0"], "datastage.sh", "/home/%USER%/datastage.sh",  user="%USER%")
+  
+    # setup
+    exp.run(["inst0"], "chmod 755 /home/%USER%/datastage.sh", user="%USER%")
+
+    # copy data files
+    exp.run(["inst0"], "/home/%USER%/datastage.sh -URL https://s3.amazonaws.com/blasttestdata/ -FILE blastwf.tar.gz -DEST /home/%USER%/blast/", user="%USER%")
+
+    
+    # copy our scripts to the instance
+    exp.put(["inst0"], "workflow_blast.sh", "/home/%USER%/workflow_blast.sh",
+            user="%USER%")
+  
+    # setup
+    exp.run(["inst0"], "chmod 755 /home/%USER%/workflow_blast.sh", user="%USER%")
+
+    # run our workflow
+    exp.run(["inst0"], "/home/%USER%/workflow_blast.sh /home/%USER%/blast/ /home/%USER%/cctools", user="%USER%")

@@ -1,0 +1,13 @@
+	######################################
+	# EPIGENOMICS WF EXECUTION COMMANDS  #
+	######################################  
+
+	# DATA STAGE-IN PROCESS
+	# copy data files
+	config.vm.provision :shell, path: "datastage.sh", args: [ "-URL", "https://dl.dropboxusercontent.com/u/4192819/genome/", "-FILE", "datagen.tar.gz", "-DEST", "/home/%USER%/epigenomics/data/"], privileged: false
+
+	# copy wf files
+	config.vm.provision :shell, path: "datastage.sh", args: [ "-URL", "https://dl.dropboxusercontent.com/u/4192819/genome/", "-FILE", "wffiles.tar.gz", "-DEST", "/home/%USER%/epigenomics/"], privileged: false
+
+	# run our workflow
+	config.vm.provision :shell, path: "workflow_ep.sh", args: [ "work/", "execution"], privileged: false

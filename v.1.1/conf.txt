@@ -1,0 +1,6 @@
+WF_URI=http://purl.org/net/wicus-reqs/resource/Workflow/FEATUREGENERATION_CONC_WF;
+WFI_DATASET_PATH=files/sampledatasets/wfi.ttl;
+SWC_DATASET_PATH=files/sampledatasets/swc.ttl;
+SVA_DATASET_PATH=files/sampledatasets/sva.owl;
+CLOUD_PROV_FILE=files/cloudproviders.txt;
+WF_EXEC_FILE=files/wfexec_text_analytics.txt;

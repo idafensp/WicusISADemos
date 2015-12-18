@@ -1,0 +1,11 @@
+
+	##################################
+	# INT_EXT WF EXECUTION COMMANDS  #
+	##################################  
+
+	# DATA STAGE-IN PROCESS
+	# copy data files
+	config.vm.provision :shell, path: "datastage.sh", args: [ "-URL", "https://dl.dropboxusercontent.com/u/4192819/", "-FILE", "tc_cross_correlation.tar.gz", "-DEST", "/home/%USER%/dispel4py/tc_cross_correlation"], privileged: false
+
+	# run our workflow
+	config.vm.provision :shell, path: "workflow_geo.sh", args: [ "/home/%USER%/dispel4py/"], privileged: false

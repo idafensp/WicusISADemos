@@ -1,0 +1,14 @@
+WF_URI=http://purl.org/net/wicus-reqs/resource/Workflow/montage_WF;
+WFI_DATASET_PATH=file:/Users/isantana/Dropbox/DOCTORADO/STAY@ISI/MontageCondorPegasus/wfiConf.ttl;
+SWC_DATASET_PATH=file:/Users/isantana/Dropbox/DOCTORADO/STAY@ISI/MontageCondorPegasus/swc.ttl;
+SVA_DATASET_PATH=file:/Users/isantana/Dropbox/DOCTORADO/STAY@ISI/svacatalog/sva.owl;
+CLOUD_PROV_FILE=files/cloudproviders.txt;
+WF_EXEC_FILE_PRECIP=files/wfexec_precip_montage.txt;
+WF_EXEC_FILE_VAGRANT=files/wfexec_vagrant_montage.txt;
+#OUT_PRECIP_FILE=/Users/isantana/Dropbox/DOCTORADO/STAY@ISI/MontageCondorPegasus/precip.py;
+OUT_PRECIP_FILE=false;
+OUT_VAGRANT_FILE=/Users/isantana/Dropbox/DOCTORADO/STAY@ISI/MontageCondorPegasus/Vagrantfile;
+#OUT_VAGRANT_FILE=false;
+WICUS_USER=vagrant;
+SSH_TYPE=rsa;
+AVOID_STACK_DUPLICATED=true;

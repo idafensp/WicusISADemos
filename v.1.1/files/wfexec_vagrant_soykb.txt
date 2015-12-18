@@ -1,0 +1,13 @@
+	################################
+    # SOYKB WF EXECUTION COMMANDS  #
+    ################################  
+    
+    # DATA STAGE-IN PROCESS
+    # copy wf files
+    config.vm.provision :shell, path: "datastage.sh", args: [  "-URL", "https://github.com/rafaelfsilva/workflow-reproducibility/raw/master/components/soykb/", "-FILE", "soykb.tar.gz", "-DEST", "/home/%USER%/workflow/soykb/"], privileged: false
+
+   # copy our conf file to the instance
+   config.vm.provision "file", source: "soybean-workflow.conf", destination: "/home/%USER%/workflow/soykb/soybean-workflow.conf"
+   
+    # run our workflow
+   config.vm.provision :shell, path: "workflow_soykb.sh", args: ["/home/%USER%/workflow/soykb/"], privileged: false

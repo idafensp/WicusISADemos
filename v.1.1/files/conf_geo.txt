@@ -1,0 +1,13 @@
+WF_URI=http://purl.org/net/wicus-reqs/resource/Workflow/CrossCorrelation_WF;
+WFI_DATASET_PATH=file:/Users/isantana/gdrive/DOCTORADO/dispel4py/geo/wfiConf.ttl;
+SWC_DATASET_PATH=file:/Users/isantana/gdrive/DOCTORADO/dispel4py/geo/swc.ttl;
+SVA_DATASET_PATH=file:/Users/isantana/gdrive/DOCTORADO/dispel4py/sva.owl;
+CLOUD_PROV_FILE=files/cloudproviders.txt;
+WF_EXEC_FILE_PRECIP=files/wfexec_precip_geo.txt;
+WF_EXEC_FILE_VAGRANT=files/wfexec_vagrant_geo.txt;
+OUT_PRECIP_FILE=/Users/isantana/gdrive/DOCTORADO/dispel4py/geo/precip.py;
+#OUT_PRECIP_FILE=false;
+#OUT_VAGRANT_FILE=false;
+OUT_VAGRANT_FILE=/Users/isantana/gdrive/DOCTORADO/dispel4py/geo/Vagrantfile;
+SSH_TYPE=dsa;
+WICUS_USER=ubuntu;
