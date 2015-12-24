@@ -1,0 +1,23 @@
+    ##################################
+    # MONTAGE WF EXECUTION COMMANDS  #
+    ##################################  
+
+
+    # copy our scripts to the instance
+    exp.put(["%INSTID%"], "stageMontageData.sh", "/home/%USER%/stageMontageData.sh",
+            user="%USER%")
+
+    # setup
+    exp.run(["%INSTID%"], "chmod 755 /home/%USER%/stageMontageData.sh", user="%USER%")
+
+    # run
+    exp.run(["%INSTID%"], "/home/%USER%/stageMontageData.sh -SOURCE_FILE_PATH https://raw.githubusercontent.com/rafaelfsilva/workflow-reproducibility/master/components/montage/montagedata.tar.gz -DEST_FILE_PATH /home/%USER%/", user="%USER%")
+
+	# copy WF scripts to the instance
+    exp.put(["%INSTID%"], "workflow.sh", "/home/%USER%/workflow.sh", user="%USER%")
+
+    # setup
+    exp.run(["%INSTID%"], "chmod 755 ~/workflow.sh", user="%USER%")
+
+    # run Montage workflow
+    exp.run(["%INSTID%"], "cd ~/montage/0.1deg/ && ~/workflow.sh", user="%USER%")

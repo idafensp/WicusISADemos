@@ -1,0 +1,12 @@
+WF_URI=http://purl.org/net/wicus-reqs/resource/Workflow/soykb_WF;
+WFI_DATASET_PATH=file:/Users/isantana/Dropbox/DOCTORADO/STAY@ISI/SoyKB/wicus/wfiConf.ttl;
+SWC_DATASET_PATH=file:/Users/isantana/Dropbox/DOCTORADO/STAY@ISI/SoyKB/wicus/swc.ttl;
+SVA_DATASET_PATH=file:/Users/isantana/Dropbox/DOCTORADO/STAY@ISI/svacatalog/sva.owl;
+CLOUD_PROV_FILE=files/cloudproviders.txt;
+WF_EXEC_FILE_PRECIP=files/wfexec_precip_soykb.txt;
+WF_EXEC_FILE_VAGRANT=files/wfexec_vagrant_soykb.txt;
+#OUT_PRECIP_FILE=/Users/isantana/Dropbox/DOCTORADO/STAY@ISI/SoyKB/wicus/precip.py;
+#OUT_PRECIP_FILE=false;
+#OUT_VAGRANT_FILE=false;
+OUT_VAGRANT_FILE=/Users/isantana/Dropbox/DOCTORADO/STAY@ISI/SoyKB/wicus/Vagrantfile;
+SSH_TYPE=dsa;

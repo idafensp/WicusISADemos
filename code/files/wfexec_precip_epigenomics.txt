@@ -1,0 +1,27 @@
+    ######################################
+    # EPIGENOMICS WF EXECUTION COMMANDS  #
+    ######################################  
+    
+    # DATA STAGE-IN PROCESS
+    # copy our scripts to the instance
+    exp.put(["inst0"], "datastage.sh", "/home/%USER%/datastage.sh",
+            user="%USER%")
+  
+    # setup
+    exp.run(["inst0"], "chmod 755 /home/%USER%/datastage.sh", user="%USER%")
+
+    # copy data files
+    exp.run(["inst0"], "/home/%USER%/datastage.sh -URL https://github.com/rafaelfsilva/workflow-reproducibility/raw/master/components/epigenomics/ -FILE datagen.tar.gz -DEST /home/%USER%/epigenomics/data/", user="%USER%")
+
+    # copy WF files
+    exp.run(["inst0"], "/home/%USER%/datastage.sh -URL https://github.com/rafaelfsilva/workflow-reproducibility/raw/master/components/epigenomics/ -FILE wffiles.tar.gz -DEST /home/%USER%/epigenomics/", user="%USER%")
+    
+    # copy our scripts to the instance
+    exp.put(["inst0"], "workflow_ep.sh", "/home/%USER%/workflow_ep.sh",
+            user="%USER%")
+  
+    # setup
+    exp.run(["inst0"], "chmod 755 /home/%USER%/workflow_ep.sh", user="%USER%")
+
+    # run our workflow
+    exp.run(["inst0"], "/home/%USER%/workflow_ep.sh  work/ execution", user="%USER%")

@@ -1,0 +1,11 @@
+
+	##################################
+	# INT_EXT WF EXECUTION COMMANDS  #
+	##################################  
+
+	# DATA STAGE-IN PROCESS
+	# copy data files
+	config.vm.provision :shell, path: "datastage.sh", args: [ "-URL", "https://dl.dropboxusercontent.com/u/4192819/", "-FILE", "astro.tar.gz", "-DEST", "/home/vagrant/dispel4py/"], privileged: false
+
+	# run our workflow
+	config.vm.provision :shell, path: "workflow_astro.sh", args: [ "/home/vagrant/dispel4py/"], privileged: false
